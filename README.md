@@ -2,6 +2,7 @@
 
 - [개요](#개요)
 - [프로젝트 설명](#프로젝트-설명)
+- [주요 기능 설명](#주요기능_설명)
 - [테스트](#테스트)
 - [폴더 구조](#폴더-구조)
 
@@ -25,6 +26,35 @@
 - PROFILE 매크로 기반으로 삽입·삭제 연산마다 수행 시간을 측정해 로그 출력
 - 비교 모드(Compare Mode) 활성화 시, 두 트리를 나란히 화면에 그려서 균형 유지 차이를 한눈에 확인
 
+---
+
+## 주요 기능 설명
+
+그룹 | 단축키 | 기능 | 설명 (한줄)
+기본 노드 조작 | 1 | Search Node | 값 검색
+ | 2 | Insert Node | 연속 범위 삽입
+ | 5 | Delete Node | 연속 범위 삭제
+랜덤 노드 조작 | 3 | Insert Random (≤9999) | 0~9998 난수 삽입
+ | 4 | Insert Random (≤INT_MAX) | 31비트 난수 삽입
+ | 6 | Delete Random | 랜덤 삭제
+출력·검사 | 7 | Print Node Data | 중위 순회 값 리스트
+ | 8 | Print Path Data | 리프 경로별 black/red 카운트
+테스트·비교 | 9 | Test Tree | 자동 삽입·삭제 무결성 검사
+ | 0 | Set Compare Mode | RB↔BST 동기화 토글
+ | Q | Print Compare Result | RB vs BST 성능 통계 출력·파일 저장
+ | W | Shift Tree Drawing | 화면 그리기(RB↔BST) 전환
+
+---
+
+## 테스트
+
+- **기능 테스트**
+    - 수동 입력: 연속 범위(예: 1~N) 또는 랜덤 값 삽입/삭제 후 `PrintNodeData`, `PrintPathData`로 내부 상태 확인
+    - 비교 모드 ON/OFF 전환 후 동일 입력 수행 → 삽입·삭제 성능 차이를 콘솔 로그로 비교
+- **자동 테스트** (`TestTree` 기능)
+    - `rand()`로 생성된 32비트 난수 삽입·삭제를 CHECKPOINT(5,000,000) 단위로 루프 반복
+    - `TEST_RETURN::DOUBLE_RED`, `UNBALANCD` 오류 발생 시 즉시 중단 → 균형 검증
+    - insert/delete 누적 성공 횟수 및 루프 카운트 결과 출력
 ---
 
 ## 폴더 구조
