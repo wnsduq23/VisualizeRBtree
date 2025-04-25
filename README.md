@@ -30,19 +30,19 @@
 
 ## 주요 기능 설명
 
-그룹 | 단축키 | 기능 | 설명 (한줄)
-기본 노드 조작 | 1 | Search Node | 값 검색
- | 2 | Insert Node | 연속 범위 삽입
- | 5 | Delete Node | 연속 범위 삭제
-랜덤 노드 조작 | 3 | Insert Random (≤9999) | 0~9998 난수 삽입
- | 4 | Insert Random (≤INT_MAX) | 31비트 난수 삽입
- | 6 | Delete Random | 랜덤 삭제
-출력·검사 | 7 | Print Node Data | 중위 순회 값 리스트
- | 8 | Print Path Data | 리프 경로별 black/red 카운트
-테스트·비교 | 9 | Test Tree | 자동 삽입·삭제 무결성 검사
- | 0 | Set Compare Mode | RB↔BST 동기화 토글
- | Q | Print Compare Result | RB vs BST 성능 통계 출력·파일 저장
- | W | Shift Tree Drawing | 화면 그리기(RB↔BST) 전환
+그룹 | 단축키 | 기능 | 설명
+기본 노드 조작 | 1 | Search Node | 특정 값 검색
+ | 2 | Insert Node | 연속 범위(시작→끝) 삽입
+ | 5 | Delete Node | 연속 범위(시작→끝) 삭제
+랜덤 노드 조작 | 3 | Insert Random Node (≤9999) | 0~9998 사이 난수 N개 삽입
+ | 4 | Insert Random Node (≤INT_MAX) | 31비트 난수 N개 삽입
+ | 6 | Delete Random Node | 트리에서 랜덤 N개 삭제
+출력·검사 | 7 | Print Node Data | 중위 순회 결과 값 목록 출력
+ | 8 | Print Path Data | 각 리프 경로별 black/red 카운트 출력
+테스트·비교 | 9 | Test Tree | 자동 삽입·삭제 무결성 테스트
+ | 0 | Set Compare Mode | RB-Tree ↔ BST 동기화 모드 토글
+ | Q | Print Compare Result | RB vs BST 성능 통계 콘솔 출력 및 output.txt 저장
+ | W | Shift Tree Drawing | 화면 트리 드로잉(RB-Tree/BST) 전환
 
 ---
 
