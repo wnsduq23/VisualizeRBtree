@@ -34,7 +34,7 @@
 
 ## 폴더 구조
 <pre>
-📦 TreeVisualizerIOCP
+📦 VisualizeRBTree
 ┣ 📂Framework           # Win32 API 및 공통 헤더
 ┃  ┣ 📜 framework.h
 ┃  ┗ 📜 targetver.h
