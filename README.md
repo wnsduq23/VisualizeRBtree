@@ -30,6 +30,7 @@
 
 ## 주요 기능 설명
 
+<PRE>
 그룹 | 단축키 | 기능 | 설명
 기본 노드 조작 | 1 | Search Node | 특정 값 검색
  | 2 | Insert Node | 연속 범위(시작→끝) 삽입
@@ -43,7 +44,7 @@
  | 0 | Set Compare Mode | RB-Tree ↔ BST 동기화 모드 토글
  | Q | Print Compare Result | RB vs BST 성능 통계 콘솔 출력 및 output.txt 저장
  | W | Shift Tree Drawing | 화면 트리 드로잉(RB-Tree/BST) 전환
-
+</PRE>
 ---
 
 ## 테스트
