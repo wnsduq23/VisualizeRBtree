@@ -58,6 +58,7 @@
     - `rand()`로 생성된 32비트 난수 삽입·삭제를 CHECKPOINT(5,000,000) 단위로 루프 반복
     - `TEST_RETURN::DOUBLE_RED`, `UNBALANCD` 오류 발생 시 즉시 중단 → 균형 검증
     - insert/delete 누적 성공 횟수 및 루프 카운트 결과 출력
+      
   ![image](https://github.com/user-attachments/assets/46287522-9435-4e1b-b8eb-a4eb4bc60616)
 
 ---
